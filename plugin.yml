@@ -1,0 +1,15 @@
+name: thycotic-dsv
+description: Pulls secrets from thycotics dsv
+author: https://github.com/rmatulis
+requirements: []
+configuration:
+  properties:
+    secrets:
+      type: array
+    secret_path:
+      type: string
+    secret_key:
+      type: string
+    exported_env_variable_name:
+      type: string
+  additionalProperties: false
