@@ -1,8 +1,8 @@
 steps:
   - label: "get-secrets"
-    command: 'echo $API_ACCESS_TOKEN'
+    command: 'export'
     plugins:
       - rmatulis/thycotic-dsv:
           secret_path: "builds:github_token"
-          secret_key: "token"
+          secret_key: "data.token"
           exported_env_variable_name: "API_ACCESS_TOKEN"
