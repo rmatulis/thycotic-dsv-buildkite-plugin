@@ -1,13 +1,12 @@
 #!/bin/bash
 
-set -eo pipefail
+echo "hello"
+#echo "Exporting value \"$BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_KEY\" from secret \"$BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_PATH\" to environment variable named \"$BUILDKITE_PLUGIN_THYCOTIC_DSV_EXPORTED_ENV_VARIABLE_NAME\""
 
-    echo "Exporting value \"$BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_KEY\" from secret \"$BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_PATH\" to environment variable named \"$BUILDKITE_PLUGIN_THYCOTIC_DSV_EXPORTED_ENV_VARIABLE_NAME\""
+#exported_env_variable_name=${BUILDKITE_PLUGIN_THYCOTIC_DSV_EXPORTED_ENV_VARIABLE_NAME}
+#echo $exported_env_variable_name
 
-    exported_env_variable_name=${BUILDKITE_PLUGIN_THYCOTIC_DSV_EXPORTED_ENV_VARIABLE_NAME}
-    echo $exported_env_variable_name
+#secret_value="$(dsv secret read --path $BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_PATH -bf $BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_KEY)"
 
-    secret_value="$(dsv secret read --path $BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_PATH -bf $BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_KEY)"
-
-    echo $secret_value
-    eval export $exported_env_variable_name=\"\$secret_value\"
+#export
+#eval export $exported_env_variable_name=\"\$secret_value\"

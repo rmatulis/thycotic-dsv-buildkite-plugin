@@ -1,6 +1,6 @@
 steps:
   - label: "get-secrets"
-    command: 'export'
+    command: 'echo "hello"'
     plugins:
       - rmatulis/thycotic-dsv:
           secret_path: "builds:github_token"
