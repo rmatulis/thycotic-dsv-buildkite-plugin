@@ -52,3 +52,4 @@ else
 
     secret_value="$(dsv secret read --path $BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_PATH -bf $BUILDKITE_PLUGIN_THYCOTIC_DSV_SECRET_KEY)"
     eval export $exported_env_variable_name=\"\$secret_value\"
+fi
